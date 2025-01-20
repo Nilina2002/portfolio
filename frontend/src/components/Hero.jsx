@@ -3,7 +3,7 @@ import ProfilePic from "../assets/pf.jpg";
 
 const hero = () => {
     return (
-        <div className="flex items-center justify-center mt-10 xl:mt-14">
+        <div className="flex items-center justify-center mt-10 xl:mt-36">
             {/* Profile Photo */}
             <img
                 id="nilina-image"
