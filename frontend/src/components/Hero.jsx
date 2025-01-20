@@ -1,5 +1,6 @@
 import React from 'react'
 import ProfilePic from "../assets/pf.jpg";
+import { motion } from 'framer-motion';
 
 const hero = () => {
     return (
@@ -13,12 +14,19 @@ const hero = () => {
             />
             {/* Text Section */}
             <div className="text-left">
-                <p className="text-3xl lg:text-2xl font-extrabold text-gray-900">
-                    Hey, I'm <span className="text-amber-600">Nilina Nilaksha.</span>
-                    <p>
-                        Here, you can check out what I'm working on. I try my best to create things with ❤
+
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                >
+                    <p className="text-3xl lg:text-2xl font-extrabold text-gray-900">
+                        Hey, I'm <span className="text-amber-600">Nilina Nilaksha.</span>
+                        <p>
+                            Here, you can check out what I'm working on. I try my best to create things with ❤
+                        </p>
                     </p>
-                </p>
+                </motion.div>
 
 
             </div>

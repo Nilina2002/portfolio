@@ -36,8 +36,8 @@ const projects = [
 
 const ProjectSection = () => {
     return (
-        <section className="py-12 mt-64 flex items-center justify-center bg-amber-600">
-            <h2 className="text-5xl font-bold p-5 mb-8 text-white">My Projects</h2>
+        <section className="py-12 mt-64 flex flex-col items-center justify-center bg-amber-600">
+            <h2 className="text-5xl font-bold p-5 mb-8 text-white whitespace-nowrap">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className="bg-white p-6 rounded-lg shadow-md">
