@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import Button from './button'
+
 
 
 const Hero = () => {
@@ -21,8 +21,8 @@ const Hero = () => {
                     <Cursor />
                 </h1>
             </div>
-            <Button>hi</Button>
         </div>
+
     )
 }
 

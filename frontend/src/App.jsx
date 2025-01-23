@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import Hero from "./components/hero"
 import CLOUDS from "vanta/dist/vanta.clouds.min"
-// declare module 'vanta/src/vanta.clouds';
+import { LampContainer } from './components/ui/lamp'
 
 function App() {
   useEffect(() => {
@@ -16,6 +16,8 @@ function App() {
       <div className="bg h-screen w-screen" id="vanta">
         <Hero />
       </div>
+      <LampContainer />
+
     </div>
   )
 }
