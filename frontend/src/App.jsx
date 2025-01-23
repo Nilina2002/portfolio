@@ -1,17 +1,22 @@
-import React from "react"
-import NavBar from "./components/NavBar"
+import React, { useEffect } from "react"
 import Hero from "./components/hero"
-import ProjectSection from "./components/ProjectSection"
+import CLOUDS from "vanta/dist/vanta.clouds.min"
+// declare module 'vanta/src/vanta.clouds';
 
 function App() {
-
+  useEffect(() => {
+    CLOUDS({
+      el: "#vanta",
+      speed: 0.5
+    })
+  }, [])
 
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <ProjectSection />
-    </>
+    <div className="app m-0 p-0">
+      <div className="bg h-screen w-screen" id="vanta">
+        <Hero />
+      </div>
+    </div>
   )
 }
 
